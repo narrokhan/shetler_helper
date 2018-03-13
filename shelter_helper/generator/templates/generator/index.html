@@ -1,0 +1,9 @@
+{% if passport_list %}
+    <ul>
+    {% for passport in passport_list %}
+        <li><a href="/generator/{{ passport.passport_no }}/">{{ passport.passport_no }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Passport are available.</p>
+{% endif %}
